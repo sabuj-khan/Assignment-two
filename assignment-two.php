@@ -1,7 +1,7 @@
 <?php
 
-$tutionFee = 2500;
+$tuitionFee = 25000;
 
-$commission = ( $tutionFee > 20000 ) ? "$" . ( 25 / 100 ) * $tutionFee : (  ( $tutionFee <= 20000 && $tutionFee > 10000 ) ? "$" . ( 20 / 100 ) * $tutionFee : (  ( $tutionFee <= 10000 && $tutionFee >= 7000 ) ? "$" . ( 15 / 100 ) * $tutionFee : "Commission does not suit this tuition fee." ) );
+$commission = ( $tuitionFee > 20000 ) ? "$" . ( 25 / 100 ) * $tuitionFee : (  ( $tuitionFee <= 20000 && $tuitionFee > 10000 ) ? "$" . ( 20 / 100 ) * $tuitionFee : (  ( $tuitionFee <= 10000 && $tuitionFee >= 7000 ) ? "$" . ( 15 / 100 ) * $tuitionFee : "Commission does not suit this tuition fee." ) );
 
 echo $commission;
